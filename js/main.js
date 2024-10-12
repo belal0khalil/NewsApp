@@ -26,8 +26,8 @@ function displayArticles(arr) {
              class="w-100"
             />
          <div class="article-content p-2">
-          <h2 class="h5">${arr[i].title}</h2> 
-          <p>${arr[i].description}</p>
+          <h2 class="h5">${arr[i].title?.split("").splice(0,8) .join("")}</h2> 
+          <p>${arr[i].description.split(" ").splice(0, 15).join(" ")}</p>
           <a href="${arr[i].url}" class="btn btn-primary" target = "_blank">Read More</a>
           </div>
          </div>
